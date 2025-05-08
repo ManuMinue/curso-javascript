@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <h2>Filtrar productos</h2>
+    <div class="form">
+      <div class="form-input">
+        <label>
+          Precio mínimo:
+          <input type="number" id="minPrice" value="0" />
+        </label>
+      </div>
+      <div class="form-input">
+        <label>
+          Categoría:
+          <select id="categoria">
+            <option value="">Todas</option>
+            <option value="laptop">Laptop</option>
+            <option value="monitor">Monitor</option>
+          </select>
+        </label>
+      </div>
+      <button id="applyFilters">Aplicar filtros</button>
+    </div>
+
+    <h3>Productos:</h3>
+    <div id="productlist"></div>
+  </body>
+</html>

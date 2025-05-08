@@ -1,0 +1,15 @@
+.gallery {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+.likes {
+  font-weight: bold;
+  margin: 5px 0;
+}
