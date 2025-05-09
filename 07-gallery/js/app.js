@@ -29,7 +29,9 @@ const createPostElement = ({ id, nombre, likes }) => {
   postElement.className = "card";
 
   const postText = document.createElement("span");
-  postText.textContent = `${nombre} - Likes: ${likes}`;
+  const postHeart = document.createElement("p");
+  postText.textContent = `${nombre}`;
+  postHeart.textContent = `❤️ ${likes}`;
 
   const likeButton = document.createElement("button");
   likeButton.textContent = "Like";
@@ -37,6 +39,7 @@ const createPostElement = ({ id, nombre, likes }) => {
   likeButton.onclick = () => addLike(id);
 
   postElement.appendChild(postText);
+  postElement.appendChild(postHeart);
   postElement.appendChild(likeButton);
 
   return postElement;
